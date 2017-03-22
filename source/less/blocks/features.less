@@ -1,0 +1,118 @@
+.features {
+  padding: 37px 20px 42px;
+  @media @tablet-widths {
+    padding: 61px 0 32px;
+  }
+  @media @desktop-widths {
+    padding: 61px 0 51px;
+  }
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  @media @tablet-widths {
+    display: flex;
+  }
+}
+
+.features__item {
+  padding-left: 48px;
+  margin-bottom: 29px;
+  position: relative;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media @tablet-widths {
+    padding: 98px 40px 0;
+    width: 33.3%;
+    text-align: center;
+  }
+  &--house {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -9px;
+      width: 37px;
+      height: 35px;
+      background: url("../img/icon-house.svg") no-repeat;
+      background-size: 100%;
+    }
+    @media @tablet-widths {
+      &:before {
+        width: 75px;
+        height: 72px;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &--souvenirs {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: -11px;
+      width: 32px;
+      height: 38px;
+      background: url("../img/icon-gift.svg") no-repeat;
+      background-size: 100%;
+    }
+    @media @tablet-widths {
+      order: 1;
+      &:before {
+        width: 64px;
+        height: 75px;
+        left: 50%;
+        top: -2px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &--food {
+    &:before {
+      content: '';
+      position: absolute;
+      left: -3px;
+      top: -4px;
+      width: 38px;
+      height: 35px;
+      background: url("../img/icon-burger.svg") no-repeat;
+      background-size: 100%;
+    }
+    @media @tablet-widths {
+      &:before {
+        width: 77px;
+        height: 70px;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.features__title {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  @media @tablet-widths {
+    margin-bottom: 22px;
+    font-size: 21px;
+  }
+}
+
+.features__text {
+  line-height: 21px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #333333;
+  @media @desktop-widths {
+    padding: 0 34px;
+  }
+}

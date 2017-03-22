@@ -1,0 +1,129 @@
+.video {
+  margin: 32px auto 40px;
+  position: relative;
+  max-width: 800px;
+  @media @tablet-widths {
+    margin: 72px auto 40px;
+    height: 500px;
+  }
+  @media @desktop-widths {
+    margin-bottom: 84px;
+  }
+}
+
+.video__video {
+  height: 201px;
+  @media @tablet-widths {
+    height: 100%;
+  }
+}
+
+.video__poster {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height:auto;
+  }
+}
+
+.video__controls {
+  margin: 0 20px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #f2f2f2;
+  @media @tablet-widths {
+    margin: 0;
+    height: 93px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.video__progress-bar-wrap {
+  padding: 22px 22px 20px;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  @media @tablet-widths {
+    margin: 0 auto 0 0;
+    padding: 0;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.video__progress-bar {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.video__progress-bar-slider {
+  margin: -4.5px 0 0 -4.5px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 22%;
+  top: 50%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.video__controls-item {
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: #5c6870;
+    @media @tablet-widths {
+      fill: #fff;
+    }
+    &:hover {
+      fill: #333333;
+    }
+    &:active {
+      fill: #c1c1c1;
+    }
+  }
+  &--restart {
+    margin: 0 auto 0 24px;
+    display: block;
+    width: 16px;
+    height: 20px;
+    @media @tablet-widths {
+      order: -1;
+      margin-left: 35px;
+      margin-right: 40px;
+    }
+  }
+  &--captions {
+    display: block;
+    width: 32px;
+    height: 20px;
+  }
+  &--fullscreen {
+    margin: 0 23px 0 31px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    @media @tablet-widths {
+      margin-right: 41px;
+    }
+  }
+}

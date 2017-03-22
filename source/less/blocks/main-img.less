@@ -1,0 +1,94 @@
+.main-img {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #e4f1fa;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  overflow: hidden;
+  @media (max-width: 767px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+  @media @tablet-widths {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+  @media @desktop-widths {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    border-style: solid;
+    border-width: 57px 0 0 350px;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 0 57px 350px;
+    border-color: transparent transparent #ffffff transparent;
+  }
+}
+
+.main-img__text {
+  padding: 84px 20px 84px;
+  margin: 0 auto;
+  max-width: 461px;
+  box-sizing: border-box;
+  text-align: center;
+  @media @tablet-widths {
+    padding: 79px 20px 86px;
+    max-width: 497px;
+  }
+  @media @desktop-widths {
+    max-width: 490px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    border-style: solid;
+    border-width: 57px 0 0 600px;
+    border-color: transparent transparent transparent #ffffff;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 0 57px 600px;
+    border-color: transparent transparent #ffffff transparent;
+  }
+  .main-img--inner-page & {
+    padding: 50px 20px 64px;
+    margin: 0 auto;
+    max-width: 230px;
+    @media @tablet-widths {
+      padding: 93px 20px 111px;
+      max-width: 458px;
+    }
+    @media @desktop-widths {
+      padding: 96px 20px 119px;
+    }
+  }
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}

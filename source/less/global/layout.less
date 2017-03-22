@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto -100px;
+  min-height: 100%;
+  height: auto !important;
+  &:after {
+    content: '';
+    display: block;
+    height: 100px;
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 996px;
+}
+
+.desktop-hide {
+  @media @desktop-widths {
+    display: none;
+  }
+}

@@ -1,0 +1,133 @@
+.info-item {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+  &:first-child {
+    padding-top: 39px;
+    @media @tablet-widths {
+      padding-top: 0;
+    }
+  }
+  &--accent {
+    background: #81b3d2;
+    @media @tablet-widths {
+      flex-direction: row;
+    }
+  }
+}
+
+.info-item__body {
+  padding: 27px 20px 0;
+  text-align: center;
+  @media @tablet-widths {
+    padding: 42px 50px 45px;
+  }
+  @media @desktop-widths {
+    padding: 44px 69px 61px;
+  }
+  .info-item--accent & {
+    padding: 39px 20px 40px;
+    @media @tablet-widths {
+      padding: 45px 44px 40px;
+      width: 33.3%;
+      box-sizing: border-box;
+    }
+    @media @desktop-widths {
+      padding: 51px 56px 45px;
+    }
+  }
+}
+
+.info-item__title {
+  margin-bottom: 13px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #333333;
+  @media @tablet-widths {
+    line-height: 26px;
+    font-size: 21px;
+  }
+  @media @desktop-widths {
+    padding: 0 51px;
+    font-weight: bold;
+  }
+  .info-item--accent & {
+    margin-bottom: 11px;
+    color: #ffffff;
+    @media @desktop-widths {
+      padding: 0 36px;
+      font-weight: normal;
+    }
+  }
+}
+
+.info-item__num {
+  margin-bottom: 17px;
+  line-height: normal;
+  font-size: 14px;
+  color: #333333;
+  @media @tablet-widths {
+    margin-bottom: 24px;
+  }
+  .info-item--accent & {
+    color: #ffffff;
+  }
+  &:before {
+    content: '—';
+    margin-right: 3px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  &:after {
+    content: '—';
+    margin-left: 1px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.info-item__text {
+  padding-bottom: 27px;
+  line-height: 21px;
+  text-transform: uppercase;
+  hyphens: auto;
+  font-size: 14px;
+  color: #333333;
+  border-bottom: 1px solid #d6d6d6;
+  @media @tablet-widths {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .info-item--accent & {
+    padding-bottom: 0;
+    color: #ffffff;
+    border-bottom: none;
+  }
+  .info-item:last-child & {
+    border-bottom: none;
+  }
+}
+
+.info-item__img {
+  height: 260px;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  @media @tablet-widths {
+    flex-basis: 66.7%;
+    max-height: 256px;
+  }
+  img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+  }
+  .info-item--reverse & {
+    @media @tablet-widths {
+      order: -1;
+    }
+  }
+}
