@@ -29,33 +29,56 @@
             <div class="header__phones">
                 +7 (383) 207-54-53<br>+7 (923) 222-33-31<br>
             </div>
-            <div class="header__callme"><button class="header__callme__btn js-callme">Обратный звонок</button></div>
+            <div class="header__callme"><a href="#callme-form" class="header__callme__btn js-callme">Обратный звонок</a></div>
             <div class="header__social social">
                 <a href="http://novosibirsk.flamp.ru/firm/omis_ooo_torgovo_remontnaya_kompaniya-141265771001096" class="social__item social__item--flamp" target="_blank"></a>
                 <a href="https://twitter.com/tdomis54" class="social__item social__item--tw" target="_blank"></a>
                 <a href="http://vk.com/club57244857" class="social__item social__item--vk" target="_blank"></a>
             </div>
-            <div class="callme-form">
+            <div class="callme-form" id="callme-form" style="display: none">
                 <form action="" class="form">
                     <div class="callme-form__head">
-                        Чтобы узнать стоимость,
+                        Чтобы узнать стоимость, <br>
                         укажите свои контактные данные,
                         и мы перезвоним вам в течении 15 минут
                     </div>
                     <div class="form__line form__line--error">
                         <label class="form__label">Ваше имя:</label>
                         <div class="form__error">Укажите ваше имя</div>
-                        <div class="form__field"><input type="text"></div>
+                        <div class="form__field">
+                            <input type="text">
+                        </div>
                     </div>
                     <div class="form__line">
-                        <label class="form__label">Ваше имя:</label>
-                        <div class="form__field"></div>
+                        <label class="form__label">Телефон:</label>
+                        <div class="form__field"><input type="text" value="+7 (913) 733-18-03"></div>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">E-mail:</label>
+                        <div class="form__field"><input type="text" value="misterx@list.ru"></div>
+                    </div>
+                    <div class="form__line">
+                        <input class="btn" type="submit" value="Узнать стоимость">
                     </div>
                 </form>
             </div>
         </div>
     </header>
-    <!-- header-->
+    <nav class="nav">
+        <div class="wrap">
+            <ul class="nav__level1">
+                <li class="nav__level1-item"><a href="#">Главная</a></li>
+                <li class="nav__level1-item"><a href="#">О компании</a></li>
+                <li class="nav__level1-item"><a href="#">Виды ремонта</a></li>
+                <li class="nav__level1-item"><a href="#">Материалы</a></li>
+                <li class="nav__level1-item"><a href="#">Дизайн интерьера</a></li>
+                <li class="nav__level1-item"><a href="#">Прайс</a></li>
+                <li class="nav__level1-item"><a href="#">Наши предложения</a></li>
+                <li class="nav__level1-item"><a href="#">Галерея работ</a></li>
+                <li class="nav__level1-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
     <section class="middle">
         <table class="content_cont" width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
@@ -88,6 +111,6 @@
 <!--footer-->
 </body>
 
-<script type="text/javascript" src="../js/libs/lib.js"></script>
+<script type="text/javascript" src="../js/libs/libs.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 </html>
