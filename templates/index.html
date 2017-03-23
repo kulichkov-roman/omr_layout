@@ -65,11 +65,36 @@
         </div>
     </header>
     <nav class="nav">
+        <div class="nav__bg"></div>
         <div class="wrap">
             <ul class="nav__level1">
-                <li class="nav__level1-item"><a href="#">Главная</a></li>
+                <li class="nav__level1-item"><a href="#">Главная</a></li><!--класс nav__level1-item--active добавлять для активного пункта меню-->
                 <li class="nav__level1-item"><a href="#">О компании</a></li>
-                <li class="nav__level1-item"><a href="#">Виды ремонта</a></li>
+                <li class="nav__level1-item"><a href="#">Виды ремонта</a>
+                    <div class="nav__level2-wrap">
+                        <ul class="nav__level2">
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><!--класс nav__level2-item--active добавлять для активного пункта меню, класс nav__level2-item--has-sublevel для пункта меню, у которого есть подменю -->
+                                <a href="#">Частным лицам</a>
+                                <div class="nav__level3-wrap">
+                                    <ul class="nav__level3">
+                                        <li class="nav__level3-item"><a href="#">Ремонт квартир</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт апартаментов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт пент-хаусов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт коттеджей и загородных домов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт дачных домов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт таунхаусов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт элитного жилья</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Бизнесу</a></li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Фасадные работы</a></li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Услуги дизайнера</a></li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Изготовление корпусной мебели</a></li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Изготовление и монтаж оконных конструкций</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="nav__level1-item"><a href="#">Материалы</a></li>
                 <li class="nav__level1-item"><a href="#">Дизайн интерьера</a></li>
                 <li class="nav__level1-item"><a href="#">Прайс</a></li>
@@ -79,6 +104,88 @@
             </ul>
         </div>
     </nav>
+    <section class="calculator">
+        <div class="wrap">
+            <div class="calculator__title">
+                <i class="fa fa-calculator" aria-hidden="true"></i>РАССЧИТАЙТЕ СТОИМОСТЬ РЕМОНТА
+            </div>
+            <div class="row">
+                <div class="col3">
+                    <div class="form__line">
+                        <label class="form__label">Что вы хотите отремонтировать?</label>
+                        <div class="form__select">
+                            <select name="" id="">
+                                <option value="">Квартира</option>
+                                <option value="">Квартира</option>
+                                <option value="">Квартира</option>
+                                <option value="">Квартира</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="form__line">
+                        <label class="form__label">Выберите вид ремонта:</label>
+                        <div class="form__select">
+                            <select name="" id="">
+                                <option value="">Эксклюзивный</option>
+                                <option value="">Эксклюзивный</option>
+                                <option value="">Эксклюзивный</option>
+                                <option value="">Эксклюзивный</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="form__line">
+                        <label class="form__label">Введите значение площади (м2)</label>
+                        <div class="form__select">
+                            <select name="" id="">
+                                <option value="">10</option>
+                                <option value="">20</option>
+                                <option value="">30</option>
+                                <option value="">40</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="form__line">
+                        <label class="form__label">Кол-во комнат:</label>
+                        <div class="form__select">
+                            <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="form__line">
+                        <label class="form__label">Вам нужен дизайн-проект?</label>
+                        <div class="form__select">
+                            <select name="" id="">
+                                <option value="">Да</option>
+                                <option value="">Нет</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="form__line">
+                        <label class="form__label">Вы можете отправить нам документацию
+                            для составления более точной сметы</label>
+                        <div class="form__file">
+                            <input type="file">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__separator"></div>
+        </div>
+    </section>
     <section class="middle">
         <table class="content_cont" width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>

@@ -134,10 +134,17 @@ body {
   margin: 0 auto;
   width: 996px;
 }
-@media (min-width: 1200px) {
-  .desktop-hide {
-    display: none;
-  }
+.row {
+  margin-left: -30px;
+  font-size: 0;
+  line-height: 0;
+}
+.col3 {
+  margin-bottom: 39px;
+  padding-left: 30px;
+  width: 33.3%;
+  display: inline-block;
+  box-sizing: border-box;
 }
 .fancybox-bg {
   background: #333333;
@@ -186,6 +193,9 @@ body {
   font-size: 14px;
   font-weight: bold;
   color: #343434;
+}
+.calculator .form__label {
+  color: #fff;
 }
 .form__error {
   line-height: normal;
@@ -349,39 +359,91 @@ body {
 .form__checkbox-label:active:after {
   opacity: 0.3;
 }
-@media (min-width: 768px) {
-  .form__group-checkbox {
-    margin: 0 60px -13px;
-    padding-top: 16px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media (min-width: 1200px) {
-  .form__group-checkbox {
-    margin: 0 0 -20px;
-    padding-top: 0;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-  }
-}
 .form__note {
   text-transform: uppercase;
   line-height: normal;
   font-size: 14px;
   color: #333333;
 }
-@media (min-width: 1200px) {
-  .form__group-desktop-inline {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: end;
-        align-items: flex-end;
-  }
+.form__select {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #b0b8bf;
+  border-radius: 5px;
+}
+.form__select select {
+  padding: 0 26px 0 9px;
+  position: relative;
+  width: 100%;
+  height: 43px;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  color: #343434;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form__select select:focus {
+  outline: none;
+}
+.form__select:before {
+  content: "\f078";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: #333333;
+}
+.form__select--load {
+  border: none;
+}
+.form__select--load:before {
+  display: none;
+}
+.form__select .select2-container--default .select2-selection--single {
+  background: #fff;
+  border: 1px solid #b0b8bf;
+  border-radius: 5px;
+}
+.form__select .select2-container .select2-selection--single {
+  height: 45px;
+}
+.form__select .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 43px;
+}
+.form__select .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 9px;
+  padding-right: 43px;
+  font-size: 14px;
+  color: #343434;
+}
+.form__select .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 43px;
+}
+.form__select .select2-container--default .select2-selection--single .select2-selection__arrow:before {
+  content: "\f078";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: #333333;
+}
+.form__select .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #ffb400;
 }
 .btn {
   display: block;
@@ -559,6 +621,16 @@ body {
   position: relative;
   background: #e1e1e1;
 }
+.nav__bg {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
 .nav__level1 {
   display: -ms-flexbox;
   display: flex;
@@ -566,6 +638,7 @@ body {
   list-style: none;
 }
 .nav__level1-item {
+  position: relative;
   display: table;
   -ms-flex-align: center;
       align-items: center;
@@ -582,11 +655,123 @@ body {
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
-.nav__level1-item > a:hover,
-.nav__level1-item--active .nav__level1-item > a {
+.nav__level1-item:hover,
+.nav__level1-item--active {
+  z-index: 20;
+}
+.nav__level1-item:hover > a,
+.nav__level1-item--active > a {
   background: #e8e8e8;
   border-bottom: 1px solid #aaaaaa;
   box-shadow: 0 1px 10px 0 rgba(42, 42, 42, 0.2);
+}
+.nav__level1-item:hover .nav__level2 {
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+.nav__level2-wrap {
+  position: absolute;
+  width: 825px;
+  left: 0;
+  top: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+.nav__level2 {
+  width: 408px;
+  list-style: none;
+  box-shadow: 0 1px 10px 0 rgba(42, 42, 42, 0.2);
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: visibility 0s linear 300ms, transform 300ms linear;
+}
+.nav__level2-item {
+  background: #e8e8e8;
+  border-bottom: 1px solid #b4b4b4;
+}
+.nav__level2-item:last-child {
+  border-bottom: none;
+}
+.nav__level2-item:hover > a,
+.nav__level2-item--active > a {
+  background: #ffc029;
+}
+.nav__level2-item:hover .nav__level3 {
+  visibility: visible;
+  transform: translateX(0);
+  transition-delay: 0s;
+}
+.nav__level2-item--has-sublevel > a {
+  position: relative;
+}
+.nav__level2-item--has-sublevel > a:after {
+  content: '';
+  width: 6px;
+  height: 9px;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  background: url("../images/carret.png") no-repeat center;
+  background-size: 100%;
+}
+.nav__level2-item > a {
+  padding: 12px 12px 10px;
+  display: block;
+  text-decoration: none;
+  line-height: normal;
+  font-size: 15px;
+  color: #333333;
+}
+.nav__level3-wrap {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.nav__level3 {
+  width: 408px;
+  list-style: none;
+  border-left: 1px solid #b4b4b4;
+  box-shadow: 0 1px 10px 0 rgba(42, 42, 42, 0.2);
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: visibility 0s linear 300ms, transform 300ms linear;
+}
+.nav__level3-item {
+  background: #e8e8e8;
+  border-bottom: 1px solid #b4b4b4;
+}
+.nav__level3-item:last-child {
+  border-bottom: none;
+}
+.nav__level3-item:hover > a,
+.nav__level3-item--active > a {
+  background: #ffc029;
+}
+.nav__level3-item > a {
+  padding: 12px 12px 10px;
+  display: block;
+  text-decoration: none;
+  line-height: normal;
+  font-size: 15px;
+  color: #333333;
+}
+.calculator {
+  padding: 66px 20px 53px;
+  background: #343434;
+  color: #ffffff;
+}
+.calculator__title {
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: normal;
+  font-size: 36px;
+  color: #ffffff;
+}
+.calculator__title i {
+  margin-right: 24px;
 }
 .main-img {
   width: 100%;

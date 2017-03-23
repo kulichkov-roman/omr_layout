@@ -22,7 +22,9 @@ gulp.task("style", function() {
 gulp.task('concat-js', function() {
     return gulp.src([
                 'source/js/jquery-3.2.0.min.js',
-                'source/js/jquery.fancybox.js'
+                'source/js/jquery.fancybox.js',
+                'source/js/select2.min.js',
+                'source/js/jquery.bxslider.min.js'
             ])
             .pipe(concat('libs.js'))
             .pipe(gulp.dest('js/libs/'));
