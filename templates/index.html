@@ -11,8 +11,8 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" media="all"  href="../css/libs/libs.css">
-    <link rel="stylesheet" media="all"  href="../css/template_styles.css">
+    <link rel="stylesheet" media="all" href="../css/libs/libs.css">
+    <link rel="stylesheet" media="all" href="../css/template_styles.css">
 </head>
 
 <body>
@@ -29,9 +29,11 @@
             <div class="header__phones">
                 +7 (383) 207-54-53<br>+7 (923) 222-33-31<br>
             </div>
-            <div class="header__callme"><a href="#callme-form" class="header__callme__btn js-callme">Обратный звонок</a></div>
+            <div class="header__callme"><a href="#callme-form" class="header__callme__btn js-callme">Обратный звонок</a>
+            </div>
             <div class="header__social social">
-                <a href="http://novosibirsk.flamp.ru/firm/omis_ooo_torgovo_remontnaya_kompaniya-141265771001096" class="social__item social__item--flamp" target="_blank"></a>
+                <a href="http://novosibirsk.flamp.ru/firm/omis_ooo_torgovo_remontnaya_kompaniya-141265771001096"
+                   class="social__item social__item--flamp" target="_blank"></a>
                 <a href="https://twitter.com/tdomis54" class="social__item social__item--tw" target="_blank"></a>
                 <a href="http://vk.com/club57244857" class="social__item social__item--vk" target="_blank"></a>
             </div>
@@ -58,9 +60,14 @@
                         <div class="form__field"><input type="text" value="misterx@list.ru"></div>
                     </div>
                     <div class="form__line">
-                        <input class="btn" type="submit" value="Узнать стоимость">
+                        <input class="btn js-thanks" type="submit" value="Узнать стоимость">
                     </div>
                 </form>
+            </div>
+            <div class="modal" id="thanks" style="display: none">
+                <div class="modal__title">Благодарим за заявку.</div>
+                <p> После обработки заказа, Вы получите от нас детальный сметный расчет, включающий:<br> стоимость работ, стоимость черновых материалов,  стоимость материалов для финишной отделки.</p>
+                <p>Расчет предоставляется БЕСПЛАТНО</p>
             </div>
         </div>
     </header>
@@ -68,19 +75,22 @@
         <div class="nav__bg"></div>
         <div class="wrap">
             <ul class="nav__level1">
-                <li class="nav__level1-item"><a href="#">Главная</a></li><!--класс nav__level1-item--active добавлять для активного пункта меню-->
+                <li class="nav__level1-item"><a href="#">Главная</a></li>
+                <!--класс nav__level1-item--active добавлять для активного пункта меню-->
                 <li class="nav__level1-item"><a href="#">О компании</a></li>
                 <li class="nav__level1-item"><a href="#">Виды ремонта</a>
                     <div class="nav__level2-wrap">
                         <ul class="nav__level2">
-                            <li class="nav__level2-item nav__level2-item--has-sublevel"><!--класс nav__level2-item--active добавлять для активного пункта меню, класс nav__level2-item--has-sublevel для пункта меню, у которого есть подменю -->
+                            <li class="nav__level2-item nav__level2-item--has-sublevel">
+                                <!--класс nav__level2-item--active добавлять для активного пункта меню, класс nav__level2-item--has-sublevel для пункта меню, у которого есть подменю -->
                                 <a href="#">Частным лицам</a>
                                 <div class="nav__level3-wrap">
                                     <ul class="nav__level3">
                                         <li class="nav__level3-item"><a href="#">Ремонт квартир</a></li>
                                         <li class="nav__level3-item"><a href="#">Ремонт апартаментов</a></li>
                                         <li class="nav__level3-item"><a href="#">Ремонт пент-хаусов</a></li>
-                                        <li class="nav__level3-item"><a href="#">Ремонт коттеджей и загородных домов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт коттеджей и загородных домов</a>
+                                        </li>
                                         <li class="nav__level3-item"><a href="#">Ремонт дачных домов</a></li>
                                         <li class="nav__level3-item"><a href="#">Ремонт таунхаусов</a></li>
                                         <li class="nav__level3-item"><a href="#">Ремонт элитного жилья</a></li>
@@ -88,10 +98,14 @@
                                 </div>
                             </li>
                             <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Бизнесу</a></li>
-                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Фасадные работы</a></li>
-                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Услуги дизайнера</a></li>
-                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Изготовление корпусной мебели</a></li>
-                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Изготовление и монтаж оконных конструкций</a></li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Фасадные работы</a>
+                            </li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Услуги дизайнера</a>
+                            </li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Изготовление
+                                корпусной мебели</a></li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Изготовление и
+                                монтаж оконных конструкций</a></li>
                         </ul>
                     </div>
                 </li>
@@ -104,6 +118,71 @@
             </ul>
         </div>
     </nav>
+    <section id="home_slider" class="home_slider">
+        <div class="slider_prev"></div>
+        <div class="slider_next"></div>
+        <div class="left">
+            <ul class="bxslider1">
+                <li>
+                    <h3>Получите скидку
+                        до <strong>30%</strong> при заказе
+                        с сайта</h3><br>
+                    <div class="home_slider__form">
+                        <div class="form__line">
+                            <div class="form__field"><input type="text" placeholder="Ваше имя"></div>
+                        </div>
+                        <div class="form__line">
+                            <div class="form__field"><input type="text" placeholder="Телефон"></div>
+                        </div>
+                        <a href="#" class="button">Получить скидку</a>
+                    </div>
+                </li>
+                <li>
+                    <h2>Материалы в розницу<br><strong>по оптовым ценам</strong></h2><br>
+                    <p>Ремонт и отделка / Доставка любых отделочных материалов /&nbsp;Оптовые&nbsp;цены</p>
+                    <br><a href="http://omisremont.ru/strojmaterialy-v-roznitsu/" class="button">Подробнее</a>
+                </li>
+                <li>
+                    <h2>Дизайн-проект<br><strong>850 руб./кв.м "под ключ"</strong></h2><br>
+                    <p>Дизайн-проект интерьера «под ключ» за 850 руб./кв.м. Авторский надзор в ПОДАРОК!</p>
+                    <br><a href="http://omisremont.ru/dizajn-proekt-800-rub-kv-m-vsem-podarok/"
+                           class="button">Подробнее</a>
+                </li>
+                <li>
+                    <h2>Контроль качества<br><strong>выезд на объекты</strong></h2><br>
+                    <p>Убедитесь&nbsp;лично в качестве предоставляемых услуг по ремонту и отделке на различных
+                        этапах</p><br><a href="http://omisremont.ru/22684-2/" class="button">Подробнее</a></li>
+                <li>
+                    <h2>Корпусная мебель<br><strong>со скидкой 20%*</strong></h2><br>
+                    <p>Скидка на изготовление мебели действует при условии заключения договора на
+                        ремонтно-отделочные работы</p><br><a
+                        href="http://omisremont.ru/izgotovlenie-korpusnoj-mebeli/" class="button">Подробнее</a>
+                </li>
+                <li>
+                    <h2>Профессиональное решение всех задач<br><strong>"под ключ"
+                    </strong></h2><br>
+                    <p>Интерьер "под ключ"&nbsp;/ Дизайн / Подбор и продажа современных материалов /&nbsp;Ремонт
+                        и отделка / Вывоз мусора</p><br><a href="http://omisremont.ru/ekonomim-vashi/"
+                                                           class="button">Подробнее</a></li>
+                <li>
+                    <h2>Сметный расчет<br><strong>за один день*</strong></h2><br>
+                    <p>Выезд на действующие объекты для оценки высокого уровня качества /&nbsp;На финише
+                        качество является главным аргументом</p><br><a
+                        href="http://omisremont.ru/na-finishe-kachestvo-yavlyaetsya-glavnym-argumentom/"
+                        class="button">Подробнее</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul class="bxslider2">
+                <li style="background-image: url(&quot;http://omisremont.ru/wp-content/uploads/2017/01/interer-v-stile-loft-7-1.jpg&quot;);"></li>
+                <li style="background-image: url(&quot;http://omisremont.ru/wp-content/uploads/2016/12/plnmgk0fivx88qyuqkah-kopiya-2-1024x848.jpg&quot;);"></li>
+                <li style="background-image: url(&quot;http://omisremont.ru/wp-content/uploads/2016/03/15.jpg&quot;); float: left;"></li>
+                <li style="background-image: url(&quot;http://omisremont.ru/wp-content/uploads/2016/02/image1-1024x530.jpg&quot;);"></li>
+                <li style="background-image: url(&quot;http://omisremont.ru/wp-content/uploads/2015/10/form_1-1024x576.jpg&quot;);"></li>
+                <li style="background-image: url(&quot;http://omisremont.ru/wp-content/uploads/2015/10/51888.jpg&quot;);"></li>
+            </ul>
+        </div>
+    </section>
     <section class="calculator">
         <div class="wrap">
             <div class="calculator__title">
@@ -178,14 +257,241 @@
                         <label class="form__label">Вы можете отправить нам документацию
                             для составления более точной сметы</label>
                         <div class="form__file">
-                            <input type="file">
+                            <div class="form__file-label" id="fileformlabel">Прикрепить файл</div>
+                            <input type="file" name="upload" onchange="getName(this.value);"/>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="calculator__separator"></div>
+            <div class="row">
+                <div class="col3">
+                    <div class="form__line">
+                        <label class="form__label">Ваше имя:</label>
+                        <div class="form__field">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="form__line">
+                        <label class="form__label">Телефон:</label>
+                        <div class="form__field">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="col3 col3--bottom">
+                    <div class="form__line">
+                        <input class="btn" type="submit" value="Узнать стоимость">
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__note">
+                <b>После обработки заказа, Вы получите от нас детальный сметный расчет, включающий:</b><br>
+                <i class="fa fa-check" aria-hidden="true"></i> стоимость работ, <i class="fa fa-check"
+                                                                                   aria-hidden="true"></i> стоимость
+                черновых материалов, <i class="fa fa-check" aria-hidden="true"></i> стоимость материалов для финишной
+                отделки.
+                <div class="calculator__note-f24">Расчет предоставляется БЕСПЛАТНО</div>
+            </div>
         </div>
     </section>
+    <section class="types">
+        <div class="wrap">
+            <div class="types__title">Ремонт квартир и других объектов</div>
+            Все проекты по ремонту квартир и других объектов мы делим на 4 категории в зависимости от специфики работ:
+            <div class="tabs">
+                <ul class="tabs__caption">
+                    <li class="tabs__item tabs__item--active"><span>Частным лицам</span></li>
+                    <li class="tabs__item"><span>Для бизнеса</span></li>
+                    <li class="tabs__item"><span>Фасадные работы</span></li>
+                    <li class="tabs__item"><span>Услуги дизайнера</span></li>
+                </ul>
+
+                <div class="tabs__content tabs__content--active">
+                    <a href="#">Ремонт квартир</a>,
+                    <a href="#">Ремонт апартаментов</a>,
+                    <a href="#">Ремонт пент-хаусов</a>,
+                    <a href="#">Ремонт коттеджей и загородных домов</a>,
+                    <a href="#">Ремонт дачных домов</a>,
+                    <a href="#">Ремонт таунхаусов</a>,
+                    <a href="#">Ремонт элитного жилья</a>
+                </div>
+
+                <div class="tabs__content">
+                    Содержимое второго блока
+                </div>
+                <div class="tabs__content">
+                    Содержимое 3 блока
+                </div>
+                <div class="tabs__content">
+                    Содержимое 4 блока
+                </div>
+            </div>
+            <input class="btn types__btn" type="button" value="Узнать стоимость">
+        </div>
+    </section>
+    <section class="service-premium">
+        <div class="wrap">
+            <div class="service-premium__title">РЕМОНТ ПРЕМИУМ КЛАССА</div>
+            <div class="service-premium__row">
+                <div class="service-premium__col">
+                    <p>Ремонт Премиум класса или элитный ремонт — это особый вид ремонта, который основывается на
+                        основных принципах:</p>
+                    <p>Уникальный дизайн-проект, разработанный эксклюзивно для Вас
+                        в соответствии с Вашими внутренними ощущениями комфорта, способный гармонировать с практичностью
+                        и высоким уровнем эстетического содержания.</p>
+                    <p>Высокий профессионализм и монопрофильность специалистов, реализующих Вашу мечту об идеальном
+                        доме.</p>
+                    <p>Выбирайте надежного и добросовестного партнера в лице компании Торговый дом «ОМиС». А мы в свою
+                        очередь реализуем любые Ваши идеи и воплотим мечту об идеальном доме
+                        в реальность.</p>
+                </div>
+                <div class="service-premium__col">
+                    <div class="service-premium__list">
+                        <div class="service-premium__list-item"><a href="#">Галерея выполненных работ</a></div>
+                        <div class="service-premium__list-item"><a href="#">Прайс-лист</a></div>
+                        <div class="service-premium__list-item"><a href="#">Галерея дизайн-проектов</a></div>
+                        <div class="service-premium__list-item"><a href="#">Наши акции</a></div>
+                        <div class="service-premium__list-item"><a href="#">Документы</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="excursion">
+        <div class="wrap">
+            <div class="excursion__t1">ПРЕДЛАГАЕМ ВАМ ПОСЕТИТЬ</div>
+            <div class="excursion__t2">НАШИ ДЕЙСТВУЮЩИЕ
+                ОБЪЕКТЫ
+            </div>
+            <div class="excursion__t3">И ЛИЧНО УБЕДИТЬСЯ НА БЕСПЛАТНОЙ ЭКСКУРСИИ
+                В КАЧЕСТВЕ ПРЕДОСТАВЛЯЕМЫХ НАМИ УСЛУГ
+            </div>
+            <a href="#" class="btn excursion__btn">Заявка на экскурсию</a>
+        </div>
+    </section>
+    <section class="home_info">
+        <div class="wrap">
+            <div class="left">
+                <h2>
+                    Отзывы
+                    <div class="panel">
+                        <div class="review_prev"></div>
+                        <div class="sep"></div>
+                        <div class="review_next"></div>
+                    </div>
+                </h2>
+                <ul class="bxslider3">
+                    <li>
+                        <div class="review">Работаю с ООО Торговый дом ОМиС уже более полугода. За это время
+                            компания зарекомендовала себя, как надежный партнер. Ребята всегда помогают с
+                            подбором материала, в офисе есть выставка, что немаловажно. Цены тоже приятно...<a
+                                    href="http://omisremont.ru/alina-totskaya-dizajner/" class="more">Прочитать
+                                полный отзыв</a></div>
+                        <div class="author">Алина Тоцкая — дизайнер, <span>23.10.2015</span></div>
+                    </li>
+                    <li>
+                        <div class="review">С компанией Торговый Дом «ОМиС» мы работаем довольно продолжительное
+                            время и за это время ребята смогли зарекомендовать себя, как опытные профессионалы в
+                            ремонте. Мы совместно закрыли несколько объектов по ремонту, и все...<a
+                                    href="http://omisremont.ru/09-11-2015/" class="more">Прочитать полный
+                                отзыв</a></div>
+                        <div class="author">Валерия Баранова, <span>09.11.2015</span></div>
+                    </li>
+                    <li>
+                        <div class="review"><a
+                                href="http://omisremont.ru/wp-content/uploads/2016/12/ABS-Dizajn.jpg"
+                                class="fancybox image"><img class="alignleft wp-image-23644 size-medium"
+                                                            src="http://omisremont.ru/wp-content/uploads/2016/12/ABS-Dizajn-225x300.jpg"
+                                                            alt="abs-dizajn" width="225" height="300"></a></div>
+                        <div class="author">Марина Протопенко, <span>5.12.2016</span></div>
+                    </li>
+                    <li>
+                        <div class="review">Перевернула весь интернет в поисках образца отзыва о работе
+                            строительной бригады.поняла: все сухо, по деловому написано, а мне хотелось бы от
+                            души чтобы шло. Быть может написано немного коряво, но это все от чистого сердца....<a
+                                    href="http://omisremont.ru/elena/" class="more">Прочитать полный отзыв</a>
+                        </div>
+                        <div class="author">Елена, <span>26.10.2015</span></div>
+                    </li>
+                    <li>
+                        <div class="review">Отличное качество плитки, сервис. Оперативная доставка, адекватная
+                            цена. Огромное спасибо за сотрудничество!
+                        </div>
+                        <div class="author">dpau­b, <span>26.09.2014</span></div>
+                    </li>
+                </ul>
+                <a href="http://omisremont.ru/otzyvy/" class="link">Все отзывы</a>
+                <a href="http://omisremont.ru/otzyvy/" class="link">Оставить отзыв</a>
+            </div>
+            <div class="right">
+                <h2><span data-item="0" class="active">Новости</span>
+                    <div class="sep"></div>
+                    <span data-item="1">Блог</span></h2>
+                <div class="items">
+                    <div class="item">
+                        <ul class="news">
+                            <li>
+                                <div class="img"><img
+                                        src="http://omisremont.ru/wp-content/uploads/2017/03/Italiya-150x150.jpg"></div>
+                                <div class="description">
+                                    <div class="date">14.03.2017</div>
+                                    <a href="http://omisremont.ru/novyj-rozygrysh-3/"><h3>НОВЫЙ РОЗЫГРЫШ!</h3></a>
+                                    <p>Объявлен новый розыгрыш!</p></div>
+                            </li>
+                            <li>
+                                <div class="img"><img
+                                        src="http://omisremont.ru/wp-content/uploads/2017/02/D-150x150.jpg"></div>
+                                <div class="description">
+                                    <div class="date">31.01.2017</div>
+                                    <a href="http://omisremont.ru/31-01-2017/"><h3>31.01.2017</h3></a>
+                                    <p><strong>Подписан договор с физическим&nbsp;лицом на ремонтно-отделочные&nbsp;работы
+                                        в&nbsp;квартире&nbsp;по адресу ул. Сухарная 96/2.</strong></p></div>
+                            </li>
+                        </ul>
+                        <a href="http://omisremont.ru/novosti/" class="link">Все новости</a>
+                    </div>
+                    <div class="item">
+                        <ul class="news">
+                            <li>
+                                <div class="img"><img
+                                        src="http://omisremont.ru/wp-content/uploads/2016/11/fb09dfc94d463a83e119e9383e7dfb06-150x150.png">
+                                </div>
+                                <div class="description"><a href="http://omisremont.ru/kak-sozdat-komfortnuyu-spalnyu/">
+                                    <h3>Как создать комфортную спальню?</h3></a>
+                                    <p>Данный вопрос можно считать индивидуальным для каждого человека. Важно понимать,
+                                        что не всегда дизайнерские задумки с глянцевых фото можно перенести в свой
+                                        интерьер. Наши специалисты готовы поделиться с вами советами, которые помогут
+                                        сделать уютное и функциональное спальное помещение.</p>
+                                    <div class="date">09.11.2016</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img"><img
+                                        src="http://omisremont.ru/wp-content/uploads/2016/11/Garderobnaya_komnata.-150x150.jpg">
+                                </div>
+                                <div class="description"><a href="http://omisremont.ru/garderob-nuzhen-li-on-v-dome/">
+                                    <h3>Гардероб: нужен ли он в доме?</h3></a>
+                                    <p>Если вы захотели сделать в своем доме гардеробное помещение, то нужно продумывать
+                                        все тонкости до мелочей.</p>
+                                    <div class="date">02.11.2016</div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <a href="http://omisremont.ru/blog/" class="link">Все статьи</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bookmarks" style="left:-170px !important">
+        <a href="http://omisremont.ru/kalkulyator/">Калькулятор</a>
+        <a href="http://tdomis.ru/" target="_blank" rel="nofollow">Наш салон-магазин</a>
+    </div>
+    <a href="#" id="scrollup" style="display: inline;"></a>
     <section class="middle">
         <table class="content_cont" width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
@@ -205,17 +511,101 @@
             </tr>
         </table>
     </section>
-    <!-- .middle-->
 </div>
-<!-- .wrapper -->
 <footer>
     <div class="wrap">
-        <div class="footer-logo"><a href="#"><img src="../images/logo.png" alt=""/></a></div>
-        <div class="development">Разработка сайта - <a target="_blank" href="http://www.sebekon.ru/">SEBEKON</a></div>
-        <div class="phone">Контактный телефон: <a href="tel:+78007750238">8 (800) 775-02-38</a></div>
+        <div class="links">
+            <div class="items">
+                <div class="item">
+                    <div class="head">Виды ремонта</div>
+                    <ul>
+                        <li><a href="http://omisremont.ru/">Под ключ</a></li>
+                        <li><a href="http://omisremont.ru/kapitalnyj-remont-kvartir/">Капитальный ремонт</a></li>
+                        <li><a href="http://omisremont.ru/remont-studii/">Квартиры-студии</a></li>
+                        <li><a href="http://omisremont.ru/remont-odnokomnatnoj-kvartiry/">Однокомнатные квартиры</a>
+                        </li>
+                        <li><a href="http://omisremont.ru/elitnyj-remont-odnokomnatnoj-kvartiry/">Элитные однокомнатные
+                            квартиры</a></li>
+                        <li><a href="http://omisremont.ru/remont-dvuhkomnatnoj-kvartiry/">Двухкомнатные квартиры в
+                            новостройке</a></li>
+                        <li><a href="http://omisremont.ru/remont-trehkomnatnoj-kvartiry/">Трехкомнатные квартиры</a>
+                        </li>
+                        <li><a href="http://omisremont.ru/remont-i-otdelka-ofisov/">Офисы</a></li>
+                        <li><a href="http://omisremont.ru/elitnaya-otdelka-domov-i-kottedzhej/">Коттеджи</a></li>
+                        <li><a href="http://omisremont.ru/remont-kottedzhej/">Внутренняя отделка коттеджа</a></li>
+                        <li><a href="http://omisremont.ru/prajs/">Прайс-лист на отделочные работы</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="head">Услуги</div>
+                    <ul>
+                        <li><a href="http://omisremont.ru/otdelka-elitnogo-zhilya/">Отделка элитного жилья</a></li>
+                        <li><a href="http://omisremont.ru/dizajn-interera/">Дизайн интерьера</a></li>
+                        <li><a href="http://omisremont.ru/dizajn-kvartir/">Дизайн квартир</a></li>
+                        <li><a href="http://omisremont.ru/remont-i-otdelka-domov/">Отделка домов</a></li>
+                        <li><a href="http://omisremont.ru/remont-v-novostrojkah/">Ремонт квартир в новостройках</a></li>
+                        <li><a href="http://omisremont.ru/elitnyj-remont-kvartir/">Элитная отделка</a></li>
+                        <li><a href="http://omisremont.ru/evroremont-kvartir/">Евроремонт</a></li>
+                        <li><a href="http://omisremont.ru/otdelka-fasadov/">Отделка фасадов</a></li>
+                        <li><a href="http://omisremont.ru/fasadnye-raboty/">Фасадные работы</a></li>
+                        <li><a href="http://omisremont.ru/otdelka-kamnem/">Отделка камнем</a></li>
+                        <li><a href="http://omisremont.ru/elitnyj-remont-vannyh/">Элитные ванные комнаты</a></li>
+                    </ul>
+
+                </div>
+                <div class="item">
+                    <div class="head">Информация</div>
+                    <ul>
+                        <li><a href="http://omisremont.ru/vakansii/">Вакансии</a></li>
+                        <li><a href="http://omisremont.ru/voprosy/">Вопросы</a></li>
+                        <li><a href="http://omisremont.ru/dokumenty/">Документы</a></li>
+                        <li><a href="http://omisremont.ru/kalkulyator/">Калькулятор</a></li>
+                        <li><a href="http://omisremont.ru/kontakty/">Контакты</a></li>
+                        <li><a href="http://material.omisremont.ru/materialy/">Материалы</a></li>
+                        <li><a href="http://omisremont.ru/o-kompanii/">О компании</a></li>
+                        <li><a href="http://omisremont.ru/otzyvy/">Отзывы</a></li>
+                        <li><a href="http://omisremont.ru/rekvizity/">Реквизиты</a></li>
+                        <li><a href="http://omisremont.ru/novosti/">Новости</a></li>
+                        <li><a href="http://omisremont.ru/blog/">Статьи</a></li>
+                        <li><a href="http://omisremont.ru/karta-sajta/">Карта сайта</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="logo">
+                <img alt="omis" src="http://omisremont.ru/wp-content/themes/omis/images/logo2.png">
+            </div>
+        </div>
+        <div class="contacts" itemscope="" itemtype="http://schema.org/PostalAddress">
+            <h4>Контакты</h4>
+            <div class="phones">
+                <span itemprop="telephone">+7 (383) 207-54-53</span><br>
+                <span itemprop="telephone">+7 (923) 222-33-31</span>
+                <a href="http://vk.com/club57244857" class="vk" target="_blank"></a>
+                <a href="https://twitter.com/tdomis54" class="tw" target="_blank"></a>
+                <a href="http://novosibirsk.flamp.ru/firm/omis_ooo_torgovo_remontnaya_kompaniya-141265771001096"
+                   class="flamp" target="_blank"></a>
+
+            </div>
+            <div class="adress">
+                <span itemprop="name" content="ООО Торговый дом «ОМиС»">ООО Торговый дом «ОМиС»</span>
+                <span itemprop="postalCode">630099</span>, <span itemprop="addressLocality">г. Новосибирск</span>,<br>
+                <span itemprop="streetAddress">ул. Военная, д. 4, офис 204</span>,<br>
+                подъезд 1
+            </div>
+            <button class="callme">Сделать заказ</button>
+            <div class="made">
+                <a href="http://seolead.pro/development" target="_blank">Разработка сайтов</a><br>
+                <a href="http://seolead.pro/seo" target="_blank">Продвижение сайтов</a>
+                <a href="http://seolead.pro/" class="made_logo" target="_blank">
+                    <img alt="seo" src="http://omisremont.ru/wp-content/themes/omis/images/seolead.png">
+                </a>
+            </div>
+        </div>
     </div>
+    <div class="left"></div>
+    <div class="right"></div>
 </footer>
-<!--footer-->
 </body>
 
 <script type="text/javascript" src="../js/libs/libs.js"></script>
