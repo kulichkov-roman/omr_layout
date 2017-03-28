@@ -4,6 +4,15 @@
   height: 140px;
   background: #343434;
   z-index: 10;
+
+  &--fixed {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
   .wrap {
     position: relative;
     height: 100%;
@@ -15,6 +24,25 @@
   position: absolute;
   left: 0;
   top: 50%;
+
+  .header--fixed & {
+    display: none;
+  }
+}
+
+.header__logo--mini {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 8px;
+
+  img {
+    height: 40px;
+  }
+
+  .header--fixed & {
+    display: block;
+  }
 }
 
 .header__slogan {
@@ -25,8 +53,20 @@
   font-size: 15px;
   line-height: 20px;
   color: #fff;
+
   b {
     font-weight: 700;
+  }
+
+  .header--fixed & {
+    top: 13px;
+    left: 143px;
+    line-height: normal;
+    font-size: 14px;
+
+    b {
+      font-weight: normal;
+    }
   }
 }
 
@@ -37,18 +77,31 @@
   line-height: normal;
   font-size: 14px;
   color: #cccccc;
+
+  .header--fixed & {
+    display: none;
+  }
 }
 
 .header__social {
   position: absolute;
   right: -8px;
   top: 57px;
+
+  .header--fixed & {
+    display: none;
+  }
 }
 
 .header__callme {
   position: absolute;
   right: 118px;
   top: 57px;
+
+  .header--fixed & {
+    right: 0;
+    top: 15px;
+  }
 }
 
 .header__callme__btn {
@@ -77,4 +130,25 @@
   font-size: 16px;
   font-weight: bold;
   color: #fff;
+
+  .header--fixed & {
+    right: 224px;
+    top: 19px;
+    font-size: 20px;
+
+    .header__phones-item {
+      display: inline-block;
+
+      &:after {
+        content: ',';
+        margin-right: 3px;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
 }
