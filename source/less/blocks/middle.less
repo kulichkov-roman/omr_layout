@@ -6,6 +6,10 @@
   font-size: 16px;
   line-height: 1.5;
 
+  .wrap {
+    width: 1000px;
+  }
+
   h1 {
     margin-top: 22px;
     margin-bottom: 22px;
@@ -25,6 +29,7 @@
     color: #343434;
     font-size: 27px;
     font-weight: 700;
+
     &:first-child {
       margin-top: 0;
     }
@@ -48,16 +53,19 @@
     counter-reset: li;
     padding: 0;
     list-style: none;
+
     li {
       position: relative;
       margin: 19px 0;
       padding: 0;
+
       &:before {
         content: counter(li) '.';
         counter-increment: li;
         margin-right: 7px;
         font-weight: 700;
       }
+
       b, strong {
         font-weight: 700;
       }
@@ -67,10 +75,12 @@
   ul:not([class]) {
     padding: 0;
     list-style: none;
+
     li {
       position: relative;
       margin: 25px 0;
       padding: 0;
+
       &:before {
         content: '';
         display: inline-block;
@@ -82,6 +92,7 @@
         border: 1.5px solid #ffc029;
         margin-right: 10px;
       }
+
       b, strong {
         font-weight: 700;
       }
@@ -91,18 +102,21 @@
   table:not([class]) {
     margin: 22px 0;
     width: 100%;
+
     th {
-      padding:7px 17px;
+      padding: 7px 17px;
       text-align: left;
-      font-weight:700;
+      font-weight: 700;
     }
-    td{
-      padding:7px 17px;
+
+    td {
+      padding: 7px 17px;
       text-align: left;
-      border-top:1px solid #e7e7e7;
+      border-top: 1px solid #e7e7e7;
     }
-    tr:nth-child(even){
-      td{
+
+    tr:nth-child(even) {
+      td {
         background: #f9f9f9;
       }
     }

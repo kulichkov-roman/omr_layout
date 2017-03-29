@@ -155,9 +155,6 @@ $(function () {
     });
 });
 
-window.onload = function(){
-
-};
 
 function getName (str){
     if (str.lastIndexOf('\\')){

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" media="all" href="../css/libs/libs.css">
+    <link rel="stylesheet" media="all" href="../css/template_styles.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="wrap">
+            <div class="header__logo"><a href="/"><img alt="logo" src="../images/logo.png"></a></div>
+            <div class="header__logo--mini"><a href="/"><img alt="logo" src="../images/logo-mini.png"></a></div>
+            <div class="header__slogan">
+                <b>Комплексный ремонт</b><br> квартир, коттеджей и офисов
+            </div>
+            <div class="header__address">
+                Новосибирск, ул. Военная, д. 4
+            </div>
+            <div class="header__phones">
+                <div class="header__phones-item">+7 (383) 207-54-53</div>
+                <div class="header__phones-item">+7 (923) 222-33-31</div>
+            </div>
+            <div class="header__callme"><a href="#callme-form" class="header__callme__btn js-callme">Обратный звонок</a>
+            </div>
+            <div class="header__social social">
+                <a href="http://novosibirsk.flamp.ru/firm/omis_ooo_torgovo_remontnaya_kompaniya-141265771001096"
+                   class="social__item social__item--flamp" target="_blank"></a>
+                <a href="https://twitter.com/tdomis54" class="social__item social__item--tw" target="_blank"></a>
+                <a href="http://vk.com/club57244857" class="social__item social__item--vk" target="_blank"></a>
+            </div>
+            <div class="callme-form" id="callme-form" style="display: none">
+                <form action="" class="form">
+                    <div class="callme-form__head">
+                        Чтобы узнать стоимость, <br>
+                        укажите свои контактные данные,
+                        и мы перезвоним вам в течении 15 минут
+                    </div>
+                    <div class="form__line form__line--error">
+                        <label class="form__label">Ваше имя:</label>
+                        <div class="form__error">Укажите ваше имя</div>
+                        <div class="form__field">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">Телефон:</label>
+                        <div class="form__field"><input type="text" value="+7 (913) 733-18-03"></div>
+                    </div>
+                    <div class="form__line">
+                        <label class="form__label">E-mail:</label>
+                        <div class="form__field"><input type="text" value="misterx@list.ru"></div>
+                    </div>
+                    <div class="form__line">
+                        <input class="btn js-thanks" type="submit" value="Узнать стоимость">
+                    </div>
+                </form>
+            </div>
+            <div class="modal" id="thanks" style="display: none">
+                <div class="modal__title">Благодарим за заявку.</div>
+                <p> После обработки заказа, Вы получите от нас детальный сметный расчет, включающий:<br> стоимость
+                    работ, стоимость черновых материалов, стоимость материалов для финишной отделки.</p>
+                <p>Расчет предоставляется БЕСПЛАТНО</p>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__bg"></div>
+        <div class="wrap">
+            <ul class="nav__level1">
+                <li class="nav__level1-item"><a href="#">Главная</a></li>
+                <!--класс nav__level1-item--active добавлять для активного пункта меню-->
+                <li class="nav__level1-item"><a href="#">О компании</a></li>
+                <li class="nav__level1-item"><a href="#">Виды ремонта</a>
+                    <div class="nav__level2-wrap">
+                        <ul class="nav__level2">
+                            <li class="nav__level2-item nav__level2-item--has-sublevel">
+                                <!--класс nav__level2-item--active добавлять для активного пункта меню, класс nav__level2-item--has-sublevel для пункта меню, у которого есть подменю -->
+                                <a href="#">Частным лицам</a>
+                                <div class="nav__level3-wrap">
+                                    <ul class="nav__level3">
+                                        <li class="nav__level3-item"><a href="#">Ремонт квартир</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт апартаментов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт пент-хаусов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт коттеджей и загородных домов</a>
+                                        </li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт дачных домов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт таунхаусов</a></li>
+                                        <li class="nav__level3-item"><a href="#">Ремонт элитного жилья</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Бизнесу</a></li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Фасадные работы</a>
+                            </li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Услуги дизайнера</a>
+                            </li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Изготовление
+                                корпусной мебели</a></li>
+                            <li class="nav__level2-item nav__level2-item--has-sublevel"><a href="#">Изготовление и
+                                монтаж оконных конструкций</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__level1-item"><a href="#">Материалы</a></li>
+                <li class="nav__level1-item"><a href="#">Дизайн интерьера</a></li>
+                <li class="nav__level1-item"><a href="#">Прайс</a></li>
+                <li class="nav__level1-item"><a href="#">Наши предложения</a></li>
+                <li class="nav__level1-item"><a href="#">Галерея работ</a></li>
+                <li class="nav__level1-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="middle">
+        <div class="wrap">
+            <h1>Прайс лист на отделочные работы</h1>
+            <p>Дата последнего обновления: 21.07.2016</p>
+            <div class="price">
+                <div class="price__left-sidebar">
+                    <ul class="price__nav">
+                        <li class="price__nav-item price__nav-item--active"><a href="#">Потолок</a></li>
+                        <li class="price__nav-item"><a href="#">Стены</a></li>
+                        <li class="price__nav-item"><a href="#">Пол</a></li>
+                        <li class="price__nav-item"><a href="#">Двери, окна</a></li>
+                        <li class="price__nav-item"><a href="#">Сантехнические работы</a></li>
+                        <li class="price__nav-item"><a href="#">Демонтажные работы (Потолок)</a></li>
+                        <li class="price__nav-item"><a href="#">Прайс на фасадные работы</a></li>
+                        <li class="price__nav-item"><a href="#">Монтаж сайдинга</a></li>
+                        <li class="price__nav-item"><a href="#">Отделка фасадов</a></li>
+                        <li class="price__nav-item"><a href="#">Дополнительные услуги</a></li>
+                    </ul>
+                    <div class="discount-form">
+                        <div class="discount-form__title">Получите скидку
+                            до <strong>30%</strong> при заказе
+                            с сайта</div>
+                        <div class="form__line">
+                            <div class="form__field"><input type="text" placeholder="Ваше имя"></div>
+                        </div>
+                        <div class="form__line">
+                            <div class="form__field"><input type="text" placeholder="Телефон"></div>
+                        </div>
+                        <a href="#" class="btn btn--border btn--dark">Получить скидку</a>
+                    </div>
+                </div>
+                <div class="price__body">
+                    <table class="price__table">
+                        <tr>
+                            <td colspan="3">
+                                <div class="price__title">Потолок</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Ед. изм.</th>
+                            <th>Цена</th>
+                        </tr>
+                        <tr>
+                            <td>Грунтовка потолка (1 слой)</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;" width="100px">от 10</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж гипсокартона по профилям на потолок (1 уровень)</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 500</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж&nbsp; гипсокартона на потолок в 2 — 3 уровня</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 800</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж короба из гипсокартона на потолок</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 500</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж полки для скрытой подсветки из гипсокартона на потолок</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 300</td>
+                        </tr>
+                        <tr>
+                            <td width="524">Монтаж серпянки на потолок, шпатлевание шва, выравнивание примыканий штукатуркой</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;" width="100">от 150</td>
+                        </tr>
+                        <tr>
+                            <td>Штукатурка потолка по маякам (в уровень)</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 350</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж «нулевого» уровня потолка (штукатурка, шпатлевание, окраска)</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 550</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж перфорированного углозащитного профиля на потолок</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 70</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж гибкого перфорированного углозащитного профиля на потолок</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 70</td>
+                        </tr>
+                        <tr>
+                            <td>Заделка швов (рустов) на потолке</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 50</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж малярной сетки на потолок</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 120</td>
+                        </tr>
+                        <tr>
+                            <td>Шпатлевание потолка под стеклохолст</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 70</td>
+                        </tr>
+                        <tr>
+                            <td>Наклеивание стеклохолста на потолок</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 120</td>
+                        </tr>
+                        <tr>
+                            <td>Шпатлевание потолка под стеклохолст и обои</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 70</td>
+                        </tr>
+                        <tr>
+                            <td>Шпатлевание потолка под обои</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 120</td>
+                        </tr>
+                        <tr>
+                            <td>Шпатлевание потолка под окраску и декоративную штукатурку</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 200</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж обоев на потолок</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 200</td>
+                        </tr>
+                        <tr>
+                            <td>Покраска обоев на потолке</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 150</td>
+                        </tr>
+                        <tr>
+                            <td>Покраска потолка акриловыми и другими красками на водной основе</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 150</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж пластиковых или мдф панелей на потолок</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 500</td>
+                        </tr>
+                        <tr>
+                            <td>Нанесение декоративной штукатурки на потолок</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 650</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж навесного потолка</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 350</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж потолка «Грильято»</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 350</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж реечного потолка</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 700</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж евровагонки на потолок</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 600</td>
+                        </tr>
+                        <tr>
+                            <td>Нанесение защитного лака на потолок (2слоя)</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;">от 120</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж натяжного потолка (с материалами)</td>
+                            <td style="text-align: center;" width="80">шт</td>
+                            <td style="text-align: center;">от 800</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж потолочной закладной под карниз (или направляющие)</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 300</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж балочной доски на потолок</td>
+                            <td style="text-align: center;" width="80">шт</td>
+                            <td style="text-align: center;" width="100">от 500</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж балочной доски на потолок</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;" width="100">от 300</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж балочной доски на потолок</td>
+                            <td style="text-align: center;" width="80">м2</td>
+                            <td style="text-align: center;" width="100">от 700</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж потолочного плинтуса (галтели)</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 150</td>
+                        </tr>
+                        <tr>
+                            <td>Шпатлевание и окраска потолочного плинтуса (галтели)</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 150</td>
+                        </tr>
+                        <tr>
+                            <td width="524">Монтаж вентиляционной приточной / вытяжной системы</td>
+                            <td style="text-align: center;" width="80">м/п</td>
+                            <td style="text-align: center;">от 250</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bookmarks" style="left:-170px !important">
+        <a href="http://omisremont.ru/kalkulyator/">Калькулятор</a>
+        <a href="http://tdomis.ru/" target="_blank" rel="nofollow">Наш салон-магазин</a>
+    </div>
+    <a href="#" id="scrollup" style="display: inline;"></a>
+</div>
+<footer>
+    <div class="wrap">
+        <div class="links">
+            <div class="items">
+                <div class="item">
+                    <div class="head">Виды ремонта</div>
+                    <ul>
+                        <li><a href="http://omisremont.ru/">Под ключ</a></li>
+                        <li><a href="http://omisremont.ru/kapitalnyj-remont-kvartir/">Капитальный ремонт</a></li>
+                        <li><a href="http://omisremont.ru/remont-studii/">Квартиры-студии</a></li>
+                        <li><a href="http://omisremont.ru/remont-odnokomnatnoj-kvartiry/">Однокомнатные квартиры</a>
+                        </li>
+                        <li><a href="http://omisremont.ru/elitnyj-remont-odnokomnatnoj-kvartiry/">Элитные однокомнатные
+                            квартиры</a></li>
+                        <li><a href="http://omisremont.ru/remont-dvuhkomnatnoj-kvartiry/">Двухкомнатные квартиры в
+                            новостройке</a></li>
+                        <li><a href="http://omisremont.ru/remont-trehkomnatnoj-kvartiry/">Трехкомнатные квартиры</a>
+                        </li>
+                        <li><a href="http://omisremont.ru/remont-i-otdelka-ofisov/">Офисы</a></li>
+                        <li><a href="http://omisremont.ru/elitnaya-otdelka-domov-i-kottedzhej/">Коттеджи</a></li>
+                        <li><a href="http://omisremont.ru/remont-kottedzhej/">Внутренняя отделка коттеджа</a></li>
+                        <li><a href="http://omisremont.ru/prajs/">Прайс-лист на отделочные работы</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="head">Услуги</div>
+                    <ul>
+                        <li><a href="http://omisremont.ru/otdelka-elitnogo-zhilya/">Отделка элитного жилья</a></li>
+                        <li><a href="http://omisremont.ru/dizajn-interera/">Дизайн интерьера</a></li>
+                        <li><a href="http://omisremont.ru/dizajn-kvartir/">Дизайн квартир</a></li>
+                        <li><a href="http://omisremont.ru/remont-i-otdelka-domov/">Отделка домов</a></li>
+                        <li><a href="http://omisremont.ru/remont-v-novostrojkah/">Ремонт квартир в новостройках</a></li>
+                        <li><a href="http://omisremont.ru/elitnyj-remont-kvartir/">Элитная отделка</a></li>
+                        <li><a href="http://omisremont.ru/evroremont-kvartir/">Евроремонт</a></li>
+                        <li><a href="http://omisremont.ru/otdelka-fasadov/">Отделка фасадов</a></li>
+                        <li><a href="http://omisremont.ru/fasadnye-raboty/">Фасадные работы</a></li>
+                        <li><a href="http://omisremont.ru/otdelka-kamnem/">Отделка камнем</a></li>
+                        <li><a href="http://omisremont.ru/elitnyj-remont-vannyh/">Элитные ванные комнаты</a></li>
+                    </ul>
+
+                </div>
+                <div class="item">
+                    <div class="head">Информация</div>
+                    <ul>
+                        <li><a href="http://omisremont.ru/vakansii/">Вакансии</a></li>
+                        <li><a href="http://omisremont.ru/voprosy/">Вопросы</a></li>
+                        <li><a href="http://omisremont.ru/dokumenty/">Документы</a></li>
+                        <li><a href="http://omisremont.ru/kalkulyator/">Калькулятор</a></li>
+                        <li><a href="http://omisremont.ru/kontakty/">Контакты</a></li>
+                        <li><a href="http://material.omisremont.ru/materialy/">Материалы</a></li>
+                        <li><a href="http://omisremont.ru/o-kompanii/">О компании</a></li>
+                        <li><a href="http://omisremont.ru/otzyvy/">Отзывы</a></li>
+                        <li><a href="http://omisremont.ru/rekvizity/">Реквизиты</a></li>
+                        <li><a href="http://omisremont.ru/novosti/">Новости</a></li>
+                        <li><a href="http://omisremont.ru/blog/">Статьи</a></li>
+                        <li><a href="http://omisremont.ru/karta-sajta/">Карта сайта</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="logo">
+                <img alt="omis" src="http://omisremont.ru/wp-content/themes/omis/images/logo2.png">
+            </div>
+        </div>
+        <div class="contacts" itemscope="" itemtype="http://schema.org/PostalAddress">
+            <h4>Контакты</h4>
+            <div class="phones">
+                <span itemprop="telephone">+7 (383) 207-54-53</span><br>
+                <span itemprop="telephone">+7 (923) 222-33-31</span>
+                <a href="http://vk.com/club57244857" class="vk" target="_blank"></a>
+                <a href="https://twitter.com/tdomis54" class="tw" target="_blank"></a>
+                <a href="http://novosibirsk.flamp.ru/firm/omis_ooo_torgovo_remontnaya_kompaniya-141265771001096"
+                   class="flamp" target="_blank"></a>
+
+            </div>
+            <div class="adress">
+                <span itemprop="name" content="ООО Торговый дом «ОМиС»">ООО Торговый дом «ОМиС»</span>
+                <span itemprop="postalCode">630099</span>, <span itemprop="addressLocality">г. Новосибирск</span>,<br>
+                <span itemprop="streetAddress">ул. Военная, д. 4, офис 204</span>,<br>
+                подъезд 1
+            </div>
+            <button class="callme">Сделать заказ</button>
+            <div class="made">
+                <a href="http://seolead.pro/development" target="_blank">Разработка сайтов</a><br>
+                <a href="http://seolead.pro/seo" target="_blank">Продвижение сайтов</a>
+                <a href="http://seolead.pro/" class="made_logo" target="_blank">
+                    <img alt="seo" src="http://omisremont.ru/wp-content/themes/omis/images/seolead.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="left"></div>
+    <div class="right"></div>
+</footer>
+</body>
+
+<script type="text/javascript" src="../js/libs/libs.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</html>

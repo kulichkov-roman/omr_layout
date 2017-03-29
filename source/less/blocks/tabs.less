@@ -5,7 +5,7 @@
 }
 
 .tabs__item {
-  margin-right:-1px;
+  margin-right: -1px;
   height: 75px;
   min-width: 218px;
   display: flex;
@@ -14,6 +14,7 @@
   background: #fff;
   border: 1px solid #b0b8bf;
   cursor: pointer;
+
   span {
     line-height: normal;
     font-size: 16px;
@@ -21,29 +22,35 @@
     color: #343434;
     border-bottom: 1px dotted #343434;
   }
-  &:first-child{
+
+  &:first-child {
     width: 200px;
     border-radius: 75px 0 0 75px;
   }
-  &:last-child{
+
+  &:last-child {
     width: 200px;
     border-radius: 0 75px 75px 0;
   }
-  &:hover{
+
+  &:hover {
     background: #ececec;
   }
-  &--active{
+
+  &--active {
     position: relative;
     background: #ffc029;
-    border-right:1px solid #ffc029;
-    z-index:1;
-    &:hover{
+    border-right: 1px solid #ffc029;
+    z-index: 1;
+
+    &:hover {
       background: #ffc029;
-      border-right:1px solid #ffc029;
+      border-right: 1px solid #ffc029;
     }
-    &:last-child{
-      border-right:inherit;
-      border-right:1px solid #b0b8bf;
+
+    &:last-child {
+      border-right: inherit;
+      border-right: 1px solid #b0b8bf;
     }
   }
 }
