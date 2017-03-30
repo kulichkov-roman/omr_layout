@@ -3,6 +3,10 @@ $(function () {
         padding: [30, 30, 40, 30]
     });
 
+    $('.fancybox').fancybox({
+
+    });
+
     $('.js-thanks').on('click', function() {
         $.fancybox.close();
         $.fancybox.open([
